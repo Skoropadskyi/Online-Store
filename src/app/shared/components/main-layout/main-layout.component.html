@@ -1,12 +1,40 @@
-<h1>Hello</h1>
+<mat-grid-list cols="12" rowHeight="100px" gutterSize="10px">
 
-<mat-grid-list cols="4" rowHeight="100px">
   <mat-grid-tile
-    *ngFor="let tile of tiles"
+    *ngFor="let tile of header"
     [colspan]="tile.cols"
     [rowspan]="tile.rows"
     [style.background]="tile.color">
-    {{tile.text}}
+
+<mat-toolbar color="primary">
+  <app-header></app-header>
+</mat-toolbar>
+
+  </mat-grid-tile>
+
+  <mat-grid-tile
+    *ngFor="let tile of sidebar"
+    [colspan]="tile.cols"
+    [rowspan]="tile.rows"
+    [style.background]="tile.color">
+
+    <app-sidebar></app-sidebar>
+
+  </mat-grid-tile>
+
+  <mat-grid-tile
+    *ngFor="let tile of content"
+    [colspan]="tile.cols"
+    [rowspan]="tile.rows"
+    [style.background]="tile.color">
+  </mat-grid-tile>
+
+  <mat-grid-tile
+    *ngFor="let tile of sidebarright"
+    [colspan]="tile.cols"
+    [rowspan]="tile.rows"
+    [style.background]="tile.color">
   </mat-grid-tile>
 </mat-grid-list>
+
 
