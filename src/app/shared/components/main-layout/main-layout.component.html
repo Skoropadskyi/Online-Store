@@ -1,40 +1,46 @@
-<mat-grid-list cols="12" rowHeight="100px" gutterSize="10px">
+<!--<mat-grid-list cols="12" rowHeight="100px" gutterSize="10px">-->
 
-  <mat-grid-tile
-    *ngFor="let tile of header"
-    [colspan]="tile.cols"
-    [rowspan]="tile.rows"
-    [style.background]="tile.color">
+<!--  <mat-grid-tile-->
+<!--    *ngFor="let tile of header"-->
+<!--    [colspan]="tile.cols"-->
+<!--    [rowspan]="tile.rows"-->
+<!--    [style.background]="tile.color">-->
 
-<mat-toolbar color="primary">
+<!--<mat-toolbar color="primary">-->
+<!--  <app-header></app-header>-->
+<!--</mat-toolbar>-->
+
+<!--  </mat-grid-tile>-->
+
+<!--  <mat-grid-tile-->
+<!--    *ngFor="let tile of sidebar"-->
+<!--    [colspan]="tile.cols"-->
+<!--    [rowspan]="tile.rows"-->
+<!--    [style.background]="tile.color">-->
+
+<!--    <app-sidebar></app-sidebar>-->
+
+<!--  </mat-grid-tile>-->
+
+<!--  <mat-grid-tile-->
+<!--    *ngFor="let tile of content"-->
+<!--    [colspan]="tile.cols"-->
+<!--    [rowspan]="tile.rows"-->
+<!--    [style.background]="tile.color">-->
+<!--  </mat-grid-tile>-->
+
+<!--  <mat-grid-tile-->
+<!--    *ngFor="let tile of sidebarright"-->
+<!--    [colspan]="tile.cols"-->
+<!--    [rowspan]="tile.rows"-->
+<!--    [style.background]="tile.color">-->
+<!--  </mat-grid-tile>-->
+<!--</mat-grid-list>-->
+
+<div class="app-wrapper">
   <app-header></app-header>
-</mat-toolbar>
-
-  </mat-grid-tile>
-
-  <mat-grid-tile
-    *ngFor="let tile of sidebar"
-    [colspan]="tile.cols"
-    [rowspan]="tile.rows"
-    [style.background]="tile.color">
-
-    <app-sidebar></app-sidebar>
-
-  </mat-grid-tile>
-
-  <mat-grid-tile
-    *ngFor="let tile of content"
-    [colspan]="tile.cols"
-    [rowspan]="tile.rows"
-    [style.background]="tile.color">
-  </mat-grid-tile>
-
-  <mat-grid-tile
-    *ngFor="let tile of sidebarright"
-    [colspan]="tile.cols"
-    [rowspan]="tile.rows"
-    [style.background]="tile.color">
-  </mat-grid-tile>
-</mat-grid-list>
-
-
+  <app-sidebar></app-sidebar>
+  <div class="content"></div>
+  <div class="sidebar-right"> <p>dfkjgdfkjgkdfgkl</p></div>
+  <div class="footer"></div>
+</div>
