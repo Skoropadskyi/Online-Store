@@ -13,6 +13,9 @@ import {MatCardModule} from '@angular/material/card';
 import { MainLayoutComponent } from './shared/components/main-layout/main-layout.component';
 import { HeaderComponent } from './shared/components/header/header.component';
 import { SidebarComponent } from './shared/components/sidebar/sidebar.component';
+import { ContentComponent } from './shared/components/content/content.component';
+import { SidebarRightComponent } from './shared/components/sidebar-right/sidebar-right.component';
+import { FooterComponent } from './shared/components/footer/footer.component';
 
 
 @NgModule({
@@ -21,6 +24,9 @@ import { SidebarComponent } from './shared/components/sidebar/sidebar.component'
     MainLayoutComponent,
     HeaderComponent,
     SidebarComponent,
+    ContentComponent,
+    SidebarRightComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,

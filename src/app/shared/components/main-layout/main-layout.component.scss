@@ -5,35 +5,35 @@
     "bl c br"
     "f f f";
   grid-template-rows: 100px 1fr 100px;
-  grid-template-columns: 3fr 6fr 3fr;
-  grid-gap: 5px;
+  grid-template-columns: 2fr 7fr 3fr;
+  grid-gap: 10px;
 }
 
 app-header {
   display: grid;
   grid-area: h;
-  background: blue;
+  background: #3f51b5;
 }
 
 app-sidebar {
   display: grid;
   grid-area: bl;
-  background: red;
+  background: #3f51b5;
 }
 
-.sidebar-right {
+app-sidebar-right {
   display: grid;
   grid-area: br;
-  background: purple;
+  background: #3f51b5;
 }
 
-.content {
+app-content {
   display: grid;
   grid-area: c;
   background: yellow;
 }
 
-.footer {
+app-footer {
   display: grid;
   grid-area: f;
   background: green;
