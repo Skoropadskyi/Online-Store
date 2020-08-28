@@ -5,7 +5,7 @@
     "bl c br"
     "f f f";
   grid-template-rows: 100px 1fr 100px;
-  grid-template-columns: 2fr 7fr 3fr;
+  grid-template-columns: 2fr 6fr 4fr;
   grid-gap: 10px;
 }
 
@@ -24,17 +24,16 @@ app-sidebar {
 app-sidebar-right {
   display: grid;
   grid-area: br;
-  background: #3f51b5;
 }
 
 app-content {
   display: grid;
   grid-area: c;
-  background: yellow;
+  background: #f5f5f5;
 }
 
 app-footer {
   display: grid;
   grid-area: f;
-  background: green;
+  background: #3f51b5;
 }
