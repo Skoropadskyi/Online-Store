@@ -2,24 +2,24 @@
 import { BrowserModule } from '@angular/platform-browser';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // used to create fake backend
 import { fakeBackendProvider } from './helpers';
 
 import {MatButtonModule} from '@angular/material/button';
-import {MatFormFieldModule} from "@angular/material/form-field";
-import {MatSelectModule} from "@angular/material/select";
-import {MatProgressBarModule} from "@angular/material/progress-bar";
-import {MatInputModule} from "@angular/material/input";
-import {MatRadioModule} from "@angular/material/radio";
-import {MatCardModule} from "@angular/material/card";
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatSelectModule} from '@angular/material/select';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+import {MatInputModule} from '@angular/material/input';
+import {MatRadioModule} from '@angular/material/radio';
+import {MatCardModule} from '@angular/material/card';
 
 import { AppRoutingModule } from './app-routing.module';
 import { JwtInterceptor, ErrorInterceptor } from './helpers';
 import { AppComponent } from './app.component';
 import { AlertComponent } from './alert';
 import { HomeComponent } from './home';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ContentComponent } from './home/content/content.component';
 import { CardAutoComponent } from './home/card-auto/card-auto.component';
 
@@ -55,7 +55,8 @@ import { CardAutoComponent } from './home/card-auto/card-auto.component';
     fakeBackendProvider
   ],
   exports: [
-    ContentComponent
+    ContentComponent,
+    CardAutoComponent,
   ],
   bootstrap: [AppComponent]
 })
