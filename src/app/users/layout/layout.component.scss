@@ -1,0 +1,38 @@
+.app-wrapper {
+  display: grid;
+  grid-template-areas:
+    "bl c";
+  grid-template-rows: 1fr;
+  grid-template-columns: 2fr 10fr;
+  grid-gap: 10px;
+  height: 90vh;
+}
+
+.sidebar {
+  grid-area: bl;
+  background: #3f51b5;
+  color: #fff;
+
+  h2 {
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  ul {
+    font-size: 16px;
+
+    li {
+      padding-bottom: 10px;
+
+      a {
+        color: #fff;
+        padding-bottom: 10px;
+      }
+    }
+  }
+}
+
+.content {
+  display: grid;
+  grid-area: c;
+}
