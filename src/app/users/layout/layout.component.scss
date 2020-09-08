@@ -5,13 +5,14 @@
   grid-template-rows: 1fr;
   grid-template-columns: 2fr 10fr;
   grid-gap: 10px;
-  height: 90vh;
+  height: 100%;
 }
 
 .sidebar {
   grid-area: bl;
   background: #3f51b5;
   color: #fff;
+  min-height: 650px;
 
   h2 {
     text-align: center;

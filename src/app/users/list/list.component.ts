@@ -4,7 +4,8 @@ import { first } from 'rxjs/operators';
 import { AccountService } from '../../services';
 
 @Component({
-  templateUrl: 'list.component.html'
+  templateUrl: 'list.component.html',
+  styleUrls: ['./list.component.scss']
 })
 
 export class ListComponent implements OnInit {

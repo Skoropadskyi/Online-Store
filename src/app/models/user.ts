@@ -4,5 +4,9 @@
     password: string;
     firstName: string;
     lastName: string;
+    region: string;
+    city: string;
+    email: string;
+    tel: number;
     token: string;
 }

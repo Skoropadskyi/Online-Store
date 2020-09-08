@@ -5,7 +5,10 @@ import { first } from 'rxjs/operators';
 
 import { AccountService, AlertService } from '../../services';
 
-@Component({ templateUrl: 'add-edit.component.html' })
+@Component({
+  templateUrl: 'add-edit.component.html'
+})
+
 export class AddEditComponent implements OnInit {
     form: FormGroup;
     id: string;
@@ -22,7 +25,7 @@ export class AddEditComponent implements OnInit {
     ) {}
 
     ngOnInit() {
-        this.id = this.route.snapshot.params['id'];
+        this.id = this.route.snapshot.params.id;
         this.isAddMode = !this.id;
 
         // password not required in edit mode
@@ -35,6 +38,10 @@ export class AddEditComponent implements OnInit {
             firstName: ['', Validators.required],
             lastName: ['', Validators.required],
             username: ['', Validators.required],
+            region: ['', Validators.required],
+            city: ['', Validators.required],
+            email: ['', Validators.required],
+            tel: ['', Validators.required],
             password: ['', passwordValidators]
         });
 

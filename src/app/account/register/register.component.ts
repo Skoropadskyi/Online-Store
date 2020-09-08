@@ -3,11 +3,11 @@ import { Router, ActivatedRoute } from '@angular/router';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { first } from 'rxjs/operators';
 
-import { AccountService, AlertService } from '@app/services';
+import { AccountService, AlertService } from '../../services';
 
 @Component({
   templateUrl: 'register.component.html',
-  styleUrls: ['./login.component.scss']
+  styleUrls: ['../login/login.component.scss']
 })
 
 export class RegisterComponent implements OnInit {
@@ -28,6 +28,10 @@ export class RegisterComponent implements OnInit {
             firstName: ['', Validators.required],
             lastName: ['', Validators.required],
             username: ['', Validators.required],
+            region: ['', Validators.required],
+            city: ['', Validators.required],
+            email: ['', Validators.required],
+            tel: ['', Validators.required],
             password: ['', [Validators.required, Validators.minLength(6)]]
         });
     }

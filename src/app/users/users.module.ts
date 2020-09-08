@@ -8,12 +8,16 @@ import { ListComponent } from './list/list.component';
 import { AddEditComponent } from './add-edit/add-edit.component';
 import { ScoreComponent } from './score/score.component';
 import { AdsComponent } from './ads/ads.component';
+import {MatRadioModule} from "@angular/material/radio";
+import {MatCardModule} from "@angular/material/card";
 
 @NgModule({
   imports: [
     CommonModule,
     ReactiveFormsModule,
-    UsersRoutingModule
+    UsersRoutingModule,
+    MatRadioModule,
+    MatCardModule
   ],
     declarations: [
         LayoutComponent,

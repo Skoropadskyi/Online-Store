@@ -55,8 +55,7 @@ import { CardAutoComponent } from './home/card-auto/card-auto.component';
     fakeBackendProvider
   ],
   exports: [
-    ContentComponent,
-    CardAutoComponent,
+    ContentComponent
   ],
   bootstrap: [AppComponent]
 })

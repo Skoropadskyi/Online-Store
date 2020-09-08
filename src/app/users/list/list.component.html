@@ -1,31 +1,47 @@
 ﻿<h1>Моя анкета</h1>
-<!--<a routerLink="add" class="btn btn-sm btn-success mb-2">Add User</a>-->
-<table class="table table-striped">
-    <thead>
-        <tr>
-            <th style="width: 30%">First Name</th>
-            <th style="width: 30%">Last Name</th>
-            <th style="width: 30%">Username</th>
-            <th style="width: 10%"></th>
-        </tr>
-    </thead>
+<table class="table">
     <tbody>
         <tr *ngFor="let user of users">
-            <td>{{user.firstName}}</td>
-            <td>{{user.lastName}}</td>
-            <td>{{user.username}}</td>
-            <td style="white-space: nowrap">
-                <a routerLink="edit/{{user.id}}" class="btn btn-sm btn-primary mr-1">Edit</a>
-                <button (click)="deleteUser(user.id)" class="btn btn-sm btn-danger btn-delete-user" [disabled]="user.isDeleting">
-                    <span *ngIf="user.isDeleting" class="spinner-border spinner-border-sm"></span>
-                    <span *ngIf="!user.isDeleting">Delete</span>
-                </button>
-            </td>
+          <td style="width: 30%">Имя:</td>
+          <td>{{user.firstName}}</td>
+        </tr>
+        <tr *ngFor="let user of users">
+          <td style="width: 30%">Фамилия:</td>
+          <td>{{user.lastName}}</td>
+        </tr>
+        <tr *ngFor="let user of users">
+          <td style="width: 30%">Имя пользователя:</td>
+          <td>{{user.username}}</td>
+        </tr>
+        <tr *ngFor="let user of users">
+          <td style="width: 30%">Область:</td>
+          <td>{{user.region}}</td>
+        </tr>
+        <tr *ngFor="let user of users">
+          <td style="width: 30%">Город:</td>
+          <td>{{user.city}}</td>
+        </tr>
+        <tr *ngFor="let user of users">
+          <td style="width: 30%">Email:</td>
+          <td>{{user.email}}</td>
+        </tr>
+        <tr *ngFor="let user of users">
+          <td style="width: 30%">Телефон:</td>
+          <td>{{user.tel}}</td>
+        </tr>
+        <tr class="btn-form" *ngFor="let user of users">
+          <td class="btn-form">
+            <a routerLink="edit/{{user.id}}" class="btn btn-sm btn-primary mr-1">Редактировать</a>
+            <button (click)="deleteUser(user.id)" class="btn btn-sm btn-danger" [disabled]="user.isDeleting">
+              <span *ngIf="user.isDeleting" class="spinner-border spinner-border-sm"></span>
+              <span *ngIf="!user.isDeleting">Удалить</span>
+            </button>
+          </td>
         </tr>
         <tr *ngIf="!users">
-            <td colspan="4" class="text-center">
-                <span class="spinner-border spinner-border-lg align-center"></span>
-            </td>
+          <td colspan="4" class="text-center">
+            <span class="spinner-border spinner-border-lg align-center"></span>
+          </td>
         </tr>
     </tbody>
 </table>
