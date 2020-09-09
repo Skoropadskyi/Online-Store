@@ -21,7 +21,8 @@ import { AppComponent } from './app.component';
 import { AlertComponent } from './alert';
 import { HomeComponent } from './home';
 import { ContentComponent } from './home/content/content.component';
-import { CardAutoComponent } from './home/card-auto/card-auto.component';
+import { CardAutoComponent } from './home/card-auto/card-auto.component';;
+import { ExtendedComponent } from './home/extended/extended.component'
 
 
 @NgModule({
@@ -45,7 +46,8 @@ import { CardAutoComponent } from './home/card-auto/card-auto.component';
     AlertComponent,
     HomeComponent,
     ContentComponent,
-    CardAutoComponent
+    CardAutoComponent,
+    ExtendedComponent
   ],
   providers: [
     {provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true},
