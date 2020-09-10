@@ -23,30 +23,33 @@ import { HomeComponent } from './home';
 import { ContentComponent } from './home/content/content.component';
 import { CardAutoComponent } from './home/card-auto/card-auto.component';;
 import { ExtendedComponent } from './home/extended/extended.component'
+import {MatCheckboxModule} from "@angular/material/checkbox";
 
 
 @NgModule({
-  imports: [
-    BrowserModule,
-    ReactiveFormsModule,
-    HttpClientModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MatButtonModule,
-    MatFormFieldModule,
-    MatSelectModule,
-    MatProgressBarModule,
-    MatInputModule,
-    FormsModule,
-    MatRadioModule,
-    MatCardModule
-  ],
+    imports: [
+        BrowserModule,
+        ReactiveFormsModule,
+        HttpClientModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        MatButtonModule,
+        MatFormFieldModule,
+        MatSelectModule,
+        MatProgressBarModule,
+        MatInputModule,
+        FormsModule,
+        MatRadioModule,
+        MatCardModule,
+        MatCheckboxModule
+    ],
   declarations: [
     AppComponent,
     AlertComponent,
     HomeComponent,
     ContentComponent,
-    CardAutoComponent,
+    CardAutoComponent
+,
     ExtendedComponent
   ],
   providers: [
