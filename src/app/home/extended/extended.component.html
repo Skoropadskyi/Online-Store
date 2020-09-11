@@ -1,1 +1,194 @@
-<p>extended works!</p>
+<form>
+  <h1>Расширенный поиск</h1>
+  <div class="feature">
+    <div class="tr">
+      <h3>Тип транспорта</h3>
+      <mat-form-field appearance="fill">
+        <mat-label>Все типы транспорта</mat-label>
+        <mat-select [(ngModel)]="selectedTransport" name="transport">
+          <mat-option *ngFor="let transport of transports" [value]="transport.value">
+            {{transport.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+
+    <div class="carcase tr">
+      <h3>Тип кузова</h3>
+      <section class="example-section">
+        <mat-checkbox class="example-margin">Универсал</mat-checkbox>
+        <mat-checkbox class="example-margin">Внедорожник / Кроссовер</mat-checkbox>
+        <mat-checkbox class="example-margin">Минивэн</mat-checkbox>
+        <mat-checkbox class="example-margin">Легковой фургон(до 1,5 т)</mat-checkbox>
+      </section>
+      <section class="example-section">
+        <mat-checkbox class="example-margin">Седан</mat-checkbox>
+        <mat-checkbox class="example-margin">Купе</mat-checkbox>
+        <mat-checkbox class="example-margin">Пикап</mat-checkbox>
+        <mat-checkbox class="example-margin">Лифтбек</mat-checkbox>
+      </section>
+      <section class="example-section">
+        <mat-checkbox class="example-margin">Хэтчбек</mat-checkbox>
+        <mat-checkbox class="example-margin">Кабриолет</mat-checkbox>
+        <mat-checkbox class="example-margin">Лимузин</mat-checkbox>
+        <mat-checkbox class="example-margin">Родстер</mat-checkbox>
+      </section>
+    </div>
+
+    <div class="country tr">
+      <h3>Страна производитель</h3>
+      <mat-form-field appearance="fill">
+        <mat-label>Выберите страну</mat-label>
+        <mat-select [(ngModel)]="selectedCountry" name="country">
+          <mat-option *ngFor="let country of countrys" [value]="country.value">
+            {{country.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+
+    <div class="tr">
+      <h3>Марка, модель, год</h3>
+      <mat-form-field appearance="fill">
+        <mat-label>Марка</mat-label>
+        <mat-select [(ngModel)]="selectedCar" name="car">
+          <mat-option *ngFor="let car of cars" [value]="car.value">
+            {{car.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Модель</mat-label>
+        <mat-select [(ngModel)]="selectedCar" name="model">
+          <mat-option *ngFor="let car of cars" [value]="car.value">
+            {{car.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill" class="of">
+        <mat-label>Год, от</mat-label>
+        <mat-select disableRipple>
+          <mat-option value="1">2020</mat-option>
+          <mat-option value="2">2019</mat-option>
+          <mat-option value="3">2018</mat-option>
+          <mat-option value="4">2017</mat-option>
+          <mat-option value="5">2016</mat-option>
+          <mat-option value="6">2015</mat-option>
+          <mat-option value="7">2014</mat-option>
+          <mat-option value="8">2013</mat-option>
+          <mat-option value="9">2012</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Год, до</mat-label>
+        <mat-select disableRipple>
+          <mat-option value="1">2020</mat-option>
+          <mat-option value="2">2019</mat-option>
+          <mat-option value="3">2018</mat-option>
+          <mat-option value="4">2017</mat-option>
+          <mat-option value="5">2016</mat-option>
+          <mat-option value="6">2015</mat-option>
+          <mat-option value="7">2014</mat-option>
+          <mat-option value="8">2013</mat-option>
+          <mat-option value="9">2012</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+  </div>
+
+  <div class="feature">
+    <div class="tr">
+      <h3>Стоимость</h3>
+      <div class="flex-block">
+        <mat-form-field appearance="fill" class="example-full-width price">
+          <input matInput type="text" placeholder="От">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="example-full-width">
+          <input matInput type="text" placeholder="До">
+        </mat-form-field>
+      </div>
+    </div>
+  </div>
+
+  <div class="feature">
+    <div class="tr">
+      <h3>Регион</h3>
+      <mat-form-field appearance="fill">
+        <mat-label>Регион</mat-label>
+        <mat-select [(ngModel)]="selectedRegion" name="region">
+          <mat-option *ngFor="let region of regions" [value]="region.value">
+            {{region.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+  </div>
+
+  <div class="feature">
+    <h2>Состояние</h2>
+    <div class="tr">
+      <h3>Авто не в Украине <br> (под заказ)</h3>
+      <mat-radio-group aria-label="Select an option">
+        <mat-radio-button value="1">Все</mat-radio-button>
+        <mat-radio-button value="2">Показать</mat-radio-button>
+        <mat-radio-button value="2">Скрыть</mat-radio-button>
+      </mat-radio-group>
+    </div>
+    <div class="tr">
+      <h3>Нерастаможенные</h3>
+      <mat-radio-group aria-label="Select an option">
+        <mat-radio-button value="1">Все</mat-radio-button>
+        <mat-radio-button value="2">Показать</mat-radio-button>
+        <mat-radio-button value="2">Скрыть</mat-radio-button>
+      </mat-radio-group>
+    </div>
+    <div class="tr">
+      <h3>В кредите</h3>
+      <mat-radio-group aria-label="Select an option">
+        <mat-radio-button value="1">Все</mat-radio-button>
+        <mat-radio-button value="2">Показать</mat-radio-button>
+        <mat-radio-button value="2">Скрыть</mat-radio-button>
+      </mat-radio-group>
+    </div>
+    <div class="tr">
+      <h3>Конфискат</h3>
+      <mat-radio-group aria-label="Select an option">
+        <mat-radio-button value="1">Все</mat-radio-button>
+        <mat-radio-button value="2">Показать</mat-radio-button>
+        <mat-radio-button value="2">Скрыть</mat-radio-button>
+      </mat-radio-group>
+    </div>
+    <div class="tr">
+      <h3>Битые <br>(после ДТП)</h3>
+      <mat-radio-group aria-label="Select an option">
+        <mat-radio-button value="1">Все</mat-radio-button>
+        <mat-radio-button value="2">Показать</mat-radio-button>
+        <mat-radio-button value="2">Скрыть</mat-radio-button>
+      </mat-radio-group>
+    </div>
+    <div class="tr">
+      <h3>Не на ходу</h3>
+      <mat-radio-group aria-label="Select an option">
+        <mat-radio-button value="1">Все</mat-radio-button>
+        <mat-radio-button value="2">Показать</mat-radio-button>
+        <mat-radio-button value="2">Скрыть</mat-radio-button>
+      </mat-radio-group>
+    </div>
+    <div class="tr">
+      <h3>Продавец</h3>
+      <mat-radio-group aria-label="Select an option">
+        <mat-radio-button value="1">Все</mat-radio-button>
+        <mat-radio-button value="2">Частное лицо</mat-radio-button>
+        <mat-radio-button value="2">Компания</mat-radio-button>
+      </mat-radio-group>
+    </div>
+
+
+
+  </div>
+</form>
+
