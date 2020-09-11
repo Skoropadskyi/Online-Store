@@ -135,7 +135,7 @@
       <mat-radio-group aria-label="Select an option">
         <mat-radio-button value="1">Все</mat-radio-button>
         <mat-radio-button value="2">Показать</mat-radio-button>
-        <mat-radio-button value="2">Скрыть</mat-radio-button>
+        <mat-radio-button value="3">Скрыть</mat-radio-button>
       </mat-radio-group>
     </div>
     <div class="tr">
@@ -143,7 +143,7 @@
       <mat-radio-group aria-label="Select an option">
         <mat-radio-button value="1">Все</mat-radio-button>
         <mat-radio-button value="2">Показать</mat-radio-button>
-        <mat-radio-button value="2">Скрыть</mat-radio-button>
+        <mat-radio-button value="3">Скрыть</mat-radio-button>
       </mat-radio-group>
     </div>
     <div class="tr">
@@ -151,7 +151,7 @@
       <mat-radio-group aria-label="Select an option">
         <mat-radio-button value="1">Все</mat-radio-button>
         <mat-radio-button value="2">Показать</mat-radio-button>
-        <mat-radio-button value="2">Скрыть</mat-radio-button>
+        <mat-radio-button value="3">Скрыть</mat-radio-button>
       </mat-radio-group>
     </div>
     <div class="tr">
@@ -159,7 +159,7 @@
       <mat-radio-group aria-label="Select an option">
         <mat-radio-button value="1">Все</mat-radio-button>
         <mat-radio-button value="2">Показать</mat-radio-button>
-        <mat-radio-button value="2">Скрыть</mat-radio-button>
+        <mat-radio-button value="3">Скрыть</mat-radio-button>
       </mat-radio-group>
     </div>
     <div class="tr">
@@ -167,7 +167,7 @@
       <mat-radio-group aria-label="Select an option">
         <mat-radio-button value="1">Все</mat-radio-button>
         <mat-radio-button value="2">Показать</mat-radio-button>
-        <mat-radio-button value="2">Скрыть</mat-radio-button>
+        <mat-radio-button value="3">Скрыть</mat-radio-button>
       </mat-radio-group>
     </div>
     <div class="tr">
@@ -175,7 +175,7 @@
       <mat-radio-group aria-label="Select an option">
         <mat-radio-button value="1">Все</mat-radio-button>
         <mat-radio-button value="2">Показать</mat-radio-button>
-        <mat-radio-button value="2">Скрыть</mat-radio-button>
+        <mat-radio-button value="3">Скрыть</mat-radio-button>
       </mat-radio-group>
     </div>
     <div class="tr">
@@ -183,12 +183,156 @@
       <mat-radio-group aria-label="Select an option">
         <mat-radio-button value="1">Все</mat-radio-button>
         <mat-radio-button value="2">Частное лицо</mat-radio-button>
-        <mat-radio-button value="2">Компания</mat-radio-button>
+        <mat-radio-button value="3">Компания</mat-radio-button>
       </mat-radio-group>
     </div>
+  </div>
+
+  <div class="feature">
+    <h2>Технические характеристики</h2>
+    <div class="tr">
+      <h3>Топливо</h3>
+      <mat-radio-group aria-label="Select an option">
+        <mat-radio-button value="1">Бензин</mat-radio-button>
+        <mat-radio-button value="2">Дизель</mat-radio-button>
+        <mat-radio-button value="3">Газ</mat-radio-button>
+        <mat-radio-button value="4">Газ / Бензин</mat-radio-button>
+        <mat-radio-button value="5">Гибрид</mat-radio-button>
+        <mat-radio-button value="6">Электро</mat-radio-button>
+        <mat-radio-button value="7">Другое</mat-radio-button>
+        <mat-radio-button value="8">Газ метан</mat-radio-button>
+        <mat-radio-button value="9">Газ пропан-бутан</mat-radio-button>
+      </mat-radio-group>
+    </div>
+    <div class="tr">
+      <h3>КПП</h3>
+      <mat-radio-group aria-label="Select an option">
+        <mat-radio-button value="1">Ручная / Механика</mat-radio-button>
+        <mat-radio-button value="2">Автомат</mat-radio-button>
+        <mat-radio-button value="3">Типтроник</mat-radio-button>
+        <mat-radio-button value="4">Робот</mat-radio-button>
+        <mat-radio-button value="5">Вариатор</mat-radio-button>
+      </mat-radio-group>
+    </div>
+    <div class="tr">
+      <h3>Тип привода</h3>
+      <mat-radio-group aria-label="Select an option">
+        <mat-radio-button value="1">Полный</mat-radio-button>
+        <mat-radio-button value="2">Передний</mat-radio-button>
+        <mat-radio-button value="3">Задний</mat-radio-button>
+      </mat-radio-group>
+    </div>
+  </div>
+
+  <div class="feature">
+    <div class="tr">
+      <h3>Расход топлива, <br> (л. / 100 км)</h3>
+      <div class="flex-block">
+        <mat-form-field appearance="fill" class="example-full-width price">
+          <input matInput type="text" placeholder="От">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="example-full-width">
+          <input matInput type="text" placeholder="До">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+          <mat-label>Вид</mat-label>
+          <mat-select disableRipple>
+            <mat-option value="1">Город</mat-option>
+            <mat-option value="2">Шоссе</mat-option>
+            <mat-option value="3">Сешанный</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+    </div>
+
+    <div class="tr">
+      <h3>Объём, л.</h3>
+      <div class="flex-block">
+        <mat-form-field appearance="fill" class="example-full-width price">
+          <input matInput type="text" placeholder="От">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="example-full-width">
+          <input matInput type="text" placeholder="До">
+        </mat-form-field>
+      </div>
+    </div>
+
+    <div class="tr">
+      <h3>Мощность</h3>
+      <div class="flex-block">
+        <mat-form-field appearance="fill" class="example-full-width price">
+          <input matInput type="text" placeholder="От">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="example-full-width">
+          <input matInput type="text" placeholder="До">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+          <mat-label>Вид</mat-label>
+          <mat-select disableRipple>
+            <mat-option value="1">л.с.</mat-option>
+            <mat-option value="2">кВт</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+    </div>
+
+    <div class="tr">
+      <h3>Пробег, тыс. км</h3>
+      <div class="flex-block">
+        <mat-form-field appearance="fill" class="example-full-width price">
+          <input matInput type="text" placeholder="От">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="example-full-width">
+          <input matInput type="text" placeholder="До">
+        </mat-form-field>
+      </div>
+    </div>
+
+    <div class="tr">
+      <h3>Количество дверей</h3>
+      <div class="flex-block">
+        <mat-form-field appearance="fill" class="example-full-width price">
+          <input matInput type="text" placeholder="От">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="example-full-width">
+          <input matInput type="text" placeholder="До">
+        </mat-form-field>
+      </div>
+    </div>
+
+    <div class="tr">
+      <h3>Количество мест</h3>
+      <div class="flex-block">
+        <mat-form-field appearance="fill" class="example-full-width price">
+          <input matInput type="text" placeholder="От">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill" class="example-full-width">
+          <input matInput type="text" placeholder="До">
+        </mat-form-field>
+      </div>
+    </div>
+
+  </div>
 
 
 
+
+  <div class="btn-block">
+    <div class="example-button-row" routerLink="/extended">
+      <button mat-raised-button color="primary">Поиск</button>
+    </div>
+
+    <div class="example-button-row">
+      <button mat-raised-button color="warn" routerLink="/">Отмена</button>
+    </div>
   </div>
 </form>
 
