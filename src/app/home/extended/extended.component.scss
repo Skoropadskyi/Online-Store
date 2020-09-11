@@ -3,12 +3,13 @@ form {
 
   .feature {
     border-bottom: 1px solid #e0e3e4;
+    padding: 20px 0;
   }
 
   .tr {
     display: flex;
     align-items: center;
-    margin-top: 30px;
+    padding-top: 20px;
 
     h3 {
       margin-right: 30px;
@@ -26,9 +27,20 @@ form {
 
   mat-form-field {
     margin-right: 10px;
+    width: 150px;
   }
 
   .mat-radio-button ~ .mat-radio-button {
     margin-left: 16px;
+  }
+
+  .btn-block {
+    display: flex;
+    flex-direction: row;
+    margin: 30px 0 40px;
+  }
+  .example-button-row {
+    outline: none;
+    margin-right: 20px;
   }
 }
