@@ -10,20 +10,22 @@
 
 .sidebar {
   grid-area: bl;
-  background: #3f51b5;
+  background: linear-gradient(to top, #c31432, #240b36);
   color: #fff;
   min-height: 650px;
 
   h2 {
     text-align: center;
-    padding-top: 20px;
+    padding: 20px 0;
+    font-size: 24px;
   }
 
   ul {
-    font-size: 16px;
+    font-size: 20px;
 
     li {
-      padding-bottom: 10px;
+      list-style: none;
+      padding-bottom: 20px;
 
       a {
         color: #fff;

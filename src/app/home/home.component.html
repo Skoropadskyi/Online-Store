@@ -1,16 +1,33 @@
 ﻿<div class="app-wrapper">
   <section class="sidebar">
-    <div class="example-button-row">
-      <button mat-raised-button color="basic">Auto.Ria</button>
-    </div>
+    <h2>Catalog</h2>
+    <ul>
+      <li>
+        <a routerLink="/telephone">Smartphones</a>
+      </li>
+      <li>
+        <a routerLink="/tv">TVs</a>
+      </li>
+      <li>
+        <a routerLink="/audio">Audio</a>
+      </li>
+      <li>
+        <a routerLink="/transport">Personal transport</a>
+      </li>
+      <li>
+        <a routerLink="/laptops">Laptops</a>
+      </li>
+      <li>
+        <a routerLink="/gaming">Gaming</a>
+      </li>
+      <li>
+        <a routerLink="/smart-watch">Smart-watch</a>
+      </li>
+    </ul>
   </section>
 
   <div class="content">
     <router-outlet></router-outlet>
   </div>
-
-<div class="sidebar-right">
-  <app-card-auto></app-card-auto>
-</div>
 
 </div>

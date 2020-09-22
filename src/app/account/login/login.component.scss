@@ -1,4 +1,36 @@
 .card-header {
-  background-color: #007bff;
+  background: linear-gradient(to left, #c31432, #240b36);
   color: #fff;
+  font-size: 22px;
+}
+
+.btn-link {
+  color: #c31432;
+}
+
+input:focus {
+  box-shadow: 2px 2px 10px 3px #c31432;
+}
+
+.form-control:focus {
+  border-color: #c31432;
+}
+
+.btn:focus {
+  box-shadow: none;
+}
+
+.btn-primary {
+  background-color: #c31432;
+  border-color: #c31432;
+}
+
+.btn-primary:focus {
+  box-shadow: 2px 2px 10px 3px #c31432;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active {
+  background-color: #c31432;
+  border-color: #c31432;
+  box-shadow: 2px 2px 10px 3px #c31432;
 }

@@ -21,37 +21,50 @@ import { AppComponent } from './app.component';
 import { AlertComponent } from './alert';
 import { HomeComponent } from './home';
 import { ContentComponent } from './home/content/content.component';
-import { CardAutoComponent } from './home/card-auto/card-auto.component';;
-import { ExtendedComponent } from './home/extended/extended.component'
 import {MatCheckboxModule} from "@angular/material/checkbox";
-
-
+import {MatIconModule} from "@angular/material/icon";
+import {MatMenuModule} from "@angular/material/menu";
+import { TelephoneComponent } from './home/telephone/telephone.component';;
+import { TvComponent } from './home/tv/tv.component';
+import { AudioComponent } from './home/audio/audio.component'
+;
+import { TransportComponent } from './home/transport/transport.component';
+import { LaptopsComponent } from './home/laptops/laptops.component'
+;
+import { GamingComponent } from './home/gaming/gaming.component';
+import { SmartWatchComponent } from './home/smart-watch/smart-watch.component'
 @NgModule({
-    imports: [
-        BrowserModule,
-        ReactiveFormsModule,
-        HttpClientModule,
-        AppRoutingModule,
-        BrowserAnimationsModule,
-        MatButtonModule,
-        MatFormFieldModule,
-        MatSelectModule,
-        MatProgressBarModule,
-        MatInputModule,
-        FormsModule,
-        MatRadioModule,
-        MatCardModule,
-        MatCheckboxModule
-    ],
+  imports: [
+    BrowserModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    MatProgressBarModule,
+    MatInputModule,
+    FormsModule,
+    MatRadioModule,
+    MatCardModule,
+    MatCheckboxModule,
+    MatIconModule,
+    MatMenuModule
+  ],
   declarations: [
     AppComponent,
     AlertComponent,
     HomeComponent,
     ContentComponent,
-    CardAutoComponent
+    TelephoneComponent,
+    TvComponent
 ,
-    ExtendedComponent
-  ],
+    AudioComponent ,
+    TransportComponent ,
+    LaptopsComponent],
+    SmartWatchComponent,
+    GamingComponent,
   providers: [
     {provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true},
     {provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true},

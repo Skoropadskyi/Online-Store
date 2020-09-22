@@ -1,12 +1,17 @@
 ﻿<!-- nav -->
 <nav class="navbar navbar-dark" *ngIf="user">
   <div class="navbar-nav">
-    <a class="navbar-brand" routerLink="/">MeGa Auto</a>
+    <a class="navbar-brand" routerLink="/">Admin Panel</a>
   </div>
     <div class="navbar-user">
-      <h1 class="user-name">{{user.firstName}}</h1>
-        <a class="nav-item nav-link" routerLink="/users" routerLinkActive="active">Личный кабинет</a>
-        <a class="nav-item nav-link" (click)="logout()">Выход</a>
+      <mat-icon>account_circle</mat-icon>
+      <button mat-button [matMenuTriggerFor]="menu" class="user-name">
+       {{user.firstName}}
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item class="nav-item nav-link" routerLink="/users" routerLinkActive="active">Личный кабинет</button>
+        <button mat-menu-item class="nav-item nav-link" (click)="logout()">Выход</button>
+      </mat-menu>
     </div>
 </nav>
 
