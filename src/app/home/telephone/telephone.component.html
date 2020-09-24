@@ -1,11 +1,27 @@
-<mat-card class="example-card">
-  <img mat-card-image src="assets/img/iphone11.webp" alt="Photo of a Shiba Inu">
+<div class="tel-wrapper">
+<mat-card class="example-card" *ngFor="let product of products; index as productId">
+<!--  <img mat-card-image src="assets/img/iphone11_pro.webp" alt="Iphone_11_pro">-->
+
+    <img class="tel-image" [src]="product.imageUrl" alt="Iphone">
+
   <mat-card-content>
-    <p>
-      Apple iPhone 11 Pro 64Gb Midnight Green
-    </p>
+    <h3>
+      <a>
+        {{product.name}}
+      </a>
+    </h3>
+
+<!--    <p *ngIf="product.description">-->
+<!--      {{product.description}}-->
+<!--    </p>-->
+
+    <h5 *ngIf="product.price">
+      {{product.price | currency}}
+    </h5>
+
   </mat-card-content>
   <mat-card-actions>
-    <button mat-button>Купить</button>
+    <button mat-raised-button color="warn">Купить</button>
   </mat-card-actions>
 </mat-card>
+</div>
