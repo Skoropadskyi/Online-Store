@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {products} from '@app/services/products-audio.service';
 
 @Component({
   selector: 'app-audio',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./audio.component.scss']
 })
 export class AudioComponent implements OnInit {
+
+  audio = products;
 
   constructor() { }
 
