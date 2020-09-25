@@ -1,1 +1,36 @@
-<p>laptops works!</p>
+<div class="tel-wrapper">
+  <div class="product-item" *ngFor="let product of laptops; index as productId">
+    <div class="product-img">
+      <a href="">
+        <img class="tel-image" [src]="product.imageUrl" alt="Transport">
+      </a>
+    </div>
+    <div class="product-list">
+
+      <h3>
+        <a>{{product.name}}</a>
+      </h3>
+
+      <!--    <p *ngIf="product.description">-->
+      <!--      {{product.description}}-->
+      <!--    </p>-->
+
+      <div class="stars"></div>
+
+      <h5 *ngIf="product.price">
+        {{product.price | currency}}
+      </h5>
+
+      <div class="actions">
+        <div class="add-to-cart">
+          <mat-card-actions>
+            <button mat-raised-button color="warn">Купить</button>
+          </mat-card-actions>
+        </div>
+        <div class="add-to-links">
+          <a class="wishlist"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

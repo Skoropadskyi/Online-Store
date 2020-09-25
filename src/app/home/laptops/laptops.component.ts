@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {products} from '@app/services/products-lap.service';
 
 @Component({
   selector: 'app-laptops',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./laptops.component.scss']
 })
 export class LaptopsComponent implements OnInit {
+
+  laptops = products;
 
   constructor() { }
 
