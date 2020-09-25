@@ -1,42 +1,14 @@
-form {
-  margin: 30px 30px 0 30px;
+.baner {
+  border: solid 1px red;
+  text-align: center;
+  color: red;
 
-  .feature {
-    display: flex;
+  h1 {
+    font-weight: bold;
+    font-size: 36px;
   }
-  .feature__box-left {
-    display: flex;
-    flex-direction: column;
-    margin-right: 20px;
-  }
-  .of {
-    margin-right: 20px;
-    margin-left: 25px;
-  }
-  .years {
-    display: flex;
-  }
-
-  .flex-block {
-    display: flex;
-    align-items: center;
-
-    h3 {
-      margin-right: 20px;
-    }
-    .price {
-      margin-right: 20px;
-    }
-  }
-  .btn-block {
-    display: flex;
-    flex-direction: row;
-  }
-  .example-button-row {
-    margin-right: 20px;
-  }
-
-  .progress-bar {
-    margin: 30px 0;
+  h2 {
+    font-weight: lighter;
+    font-size: 32px;
   }
 }
