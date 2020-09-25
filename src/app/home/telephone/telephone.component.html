@@ -1,27 +1,36 @@
 <div class="tel-wrapper">
-<mat-card class="example-card" *ngFor="let product of products; index as productId">
-<!--  <img mat-card-image src="assets/img/iphone11_pro.webp" alt="Iphone_11_pro">-->
+<div class="product-item" *ngFor="let product of tel; index as productId">
+  <div class="product-img">
+    <a href="">
+      <img class="tel-image" [src]="product.imageUrl" alt="Smartphone">
+    </a>
+  </div>
+  <div class="product-list">
 
-    <img class="tel-image" [src]="product.imageUrl" alt="Iphone">
-
-  <mat-card-content>
     <h3>
-      <a>
-        {{product.name}}
-      </a>
+      <a>{{product.name}}</a>
     </h3>
 
 <!--    <p *ngIf="product.description">-->
 <!--      {{product.description}}-->
 <!--    </p>-->
 
-    <h5 *ngIf="product.price">
-      {{product.price | currency}}
-    </h5>
+    <div class="stars"></div>
 
-  </mat-card-content>
-  <mat-card-actions>
-    <button mat-raised-button color="warn">Купить</button>
-  </mat-card-actions>
-</mat-card>
+      <h5 *ngIf="product.price">
+          {{product.price | currency}}
+      </h5>
+
+    <div class="actions">
+      <div class="add-to-cart">
+        <mat-card-actions>
+              <button mat-raised-button color="warn">Купить</button>
+            </mat-card-actions>
+      </div>
+      <div class="add-to-links">
+        <a class="wishlist"></a>
+      </div>
+    </div>
+  </div>
+</div>
 </div>

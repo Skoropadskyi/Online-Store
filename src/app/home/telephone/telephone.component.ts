@@ -8,7 +8,7 @@ import {products} from '@app/services/products-tel.service';
 })
 export class TelephoneComponent implements OnInit {
 
-  products = products;
+  tel = products;
 
   constructor() { }
 

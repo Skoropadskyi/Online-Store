@@ -1,13 +1,21 @@
 .navbar {
-  background: linear-gradient(to left, #c31432, #240b36);
+  box-shadow:
+    0 10px 20px rgba(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
 
   .navbar-brand {
-    font-size: 30px;
+    font-size: 36px;
+    font-weight: bold;
+    color: #000;
+    text-shadow:
+      0 3px 0 #b2a98f,
+      0 14px 5px rgba(0, 0, 0, 0.15),
+      0 15px 2px rgba(0, 0, 0, 0.1),
+      0 25px 30px rgba(0, 0, 0, 0.1);
   }
   .navbar-user {
     display: flex;
     align-items: center;
-    color: #fff;
     font-size: 16px;
 
     mat-icon {
@@ -18,6 +26,7 @@
     }
     .user-name {
       font-size: 22px;
+      font-weight: bold;
       margin-bottom: 0;
       padding: .5rem 1rem;
     }
