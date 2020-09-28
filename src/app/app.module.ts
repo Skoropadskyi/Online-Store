@@ -31,6 +31,8 @@ import { TransportComponent } from './home/transport/transport.component';
 import { LaptopsComponent } from './home/laptops/laptops.component';
 import { GamingComponent } from './home/gaming/gaming.component';
 import { SmartWatchComponent } from './home/smart-watch/smart-watch.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -48,7 +50,8 @@ import { SmartWatchComponent } from './home/smart-watch/smart-watch.component';
     MatCardModule,
     MatCheckboxModule,
     MatIconModule,
-    MatMenuModule
+    MatMenuModule,
+    NgbModule
   ],
   declarations: [
     AppComponent,

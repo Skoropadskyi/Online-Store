@@ -10,9 +10,6 @@
 
 .sidebar {
   grid-area: bl;
-  background: linear-gradient(to top, #c31432, #240b36);
-  color: #fff;
-  min-height: 650px;
 
   h2 {
     text-align: center;
@@ -28,7 +25,7 @@
       padding-bottom: 20px;
 
       a {
-        color: #fff;
+        color: #000;
         padding-bottom: 10px;
       }
     }
